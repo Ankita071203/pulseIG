@@ -1,7 +1,7 @@
 .wrapper-form{
   padding: 0;
   margin: 0;
-  position: absolute;
+  position: sticky;
   bottom: 50px;
 }
 .form-control {
@@ -147,7 +147,7 @@
   }
 
   .submit-button {
-    height: 6vh;
+    height: 35px;
     padding: 0.6vh;
     font-size: 1.2em;
     display: flex;
@@ -185,7 +185,7 @@
   }
 
   .submit-button {
-    height: 6vh;
+    height: 35px;
     padding: 0.5vh;
     font-size: 1.1em;
     display: flex;
