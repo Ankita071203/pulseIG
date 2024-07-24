@@ -47,6 +47,7 @@ export default function AddArticles() {
   };
 
   return (
+    <div className='wrapper-form'>
     <div className='form-container'>
       {!user ? (
         <div className='transparent-container' >
@@ -68,6 +69,7 @@ export default function AddArticles() {
           </button>
         </>
       )}
+    </div>
     </div>
   );
 }

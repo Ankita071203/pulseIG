@@ -1,6 +1,13 @@
+.wrapper-form{
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  bottom: 50px;
+}
 .form-control {
   margin-right: 1vw;
   width: 10vw;
+  
 }
 
 .description {
@@ -19,9 +26,9 @@
   font-weight: bolder;
   border: none;
   padding: 1vh;
-  border-radius: 3vh;
+  border-radius: 25px;
   cursor: pointer;
-  height: 6vh;
+  height: 45px;
   border: 0.2vh solid rgb(255, 255, 255);
   backdrop-filter: blur(2vh);
   font-size: 1.2em;
