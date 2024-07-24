@@ -164,7 +164,7 @@
   }
   .circular-img {
     border-radius: 50%;
-    width: 40px; /* Adjust the size as necessary */
+    width: 42px; /* Adjust the size as necessary */
     height: auto;
     padding: 3px;
     margin-right: 0.8vw; /* Add some space between the image and the text */
