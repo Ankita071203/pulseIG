@@ -17,7 +17,7 @@
   z-index: 1000;
   border-bottom: 1px solid rgba(255, 255, 255, 0.4); 
   box-shadow: 0 2px 5px rgba(237, 229, 229, 0.2); 
-  height: 10vh;
+  height: 70px;
 }
 
 /* Logo container styling */
@@ -73,12 +73,12 @@
 
 /* Logout button styling */
 .logout {
-  height: 5vh;
+  height: 30px;
   width: 10vw;
   color: rgb(1, 6, 62);
   background-color: rgb(255, 255, 255);
   border: none;
-  border-radius: 3vh;
+  border-radius: 20px;
   padding: 0 2vh;
   display: flex;
   align-items: center;
@@ -164,14 +164,14 @@
   }
   .circular-img {
     border-radius: 50%;
-    width: 40px; /* Adjust the size as necessary */
+    width: 45px; /* Adjust the size as necessary */
     height: auto;
     padding: 3px;
     margin-right: 0.8vw; /* Add some space between the image and the text */
     margin-left: 1.2vw;
   }
   .logoimg{
-    font-size: 2em;
+    font-size: 1.9em;
   }
 }
 /* Media query for smaller screens */
