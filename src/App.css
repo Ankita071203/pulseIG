@@ -188,3 +188,27 @@ body {
     padding: 0 0.5vw;
   }
 }
+@media (max-width: 1920px) {
+  .main-content {
+    margin-top: 20vh;
+    margin-top: 5vh;
+  }
+
+  .contain {
+    flex-direction: column; /* Stack guidelines and articles on smaller screens */
+    align-items: center; /* Center items horizontally */
+  }
+
+  .articles-container {
+    width: 75%; /* Full width on smaller screens */
+    padding: 2vh; /* Increase padding for better spacing */
+    padding-bottom: 2vh;
+    margin-top: 25vh; /* Margin to start below navigation bar */
+    margin-bottom: 18vh;
+    min-height: 75vh;
+  }
+
+  .article-item {
+    padding: 0 0.5vw;
+  }
+}

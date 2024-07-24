@@ -192,3 +192,32 @@
     font-size: 1.5em;
   }
 }
+@media (max-width: 1980px) {
+  
+  .logout:hover {
+    border: 1px solid rgb(255, 255, 255);
+    background-color: transparent;
+    color: #ffffff;
+  }
+  .circular-img {
+    border-radius: 50%;
+    width: 65px; /* Adjust the size as necessary */
+    height: auto;
+    padding: 3px;
+    margin-right: 0.8vw; /* Add some space between the image and the text */
+    margin-left: 1.2vw;
+  }
+  .logoimg{
+    font-size: 3em;
+  }
+  .navbar{
+    height: 11vh;
+    margin-bottom: 2vh;
+  }
+  .logout{
+    font-size: 1.2em;
+  }
+  .nav-link{
+    font-size: 5em;
+  }
+}
