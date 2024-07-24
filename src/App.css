@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url('C:/Users/kesha/my-article/background.jpg'); /* Replace with the path to your image */
+  background-size: cover; /* Cover the entire background */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Do not repeat the background image */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the container takes up at least the full viewport height */
+}
+
+.main-content {
+  margin-top: 7vh; /* Adjusted to viewport height */
+  padding: 2vh 0; /* Adjusted to viewport height */
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: auto; /* Hide overflow if needed */
+}
+
+.contain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+  margin-bottom: 1.5vh;
+  margin-top: 2.4vh;
+  padding-left: 3vw;
+  padding-right: 3vw;
+}
+
+.articles-container {
+  width: 75%; /* Full width */
+  height: 75vh; /* Full height */
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  backdrop-filter: blur(2vh); /* Slight transparency */
+  overflow-y: auto;
+  border: 0.2vh solid rgba(245, 245, 245, 0.3);
+  border-radius: 2vh;
+}
+
+.article-item {
+  width: 100%;
+  display: flex;
+  margin-bottom: 1vh;
+  padding: 0 1vw; /* Add some padding to avoid touching the edges */
+}
+
+.my-message {
+  justify-content: flex-end; /* Align user messages to the right */
+}
+
+.other-message {
+  justify-content: flex-start; /* Align other messages to the left */
+}
+
+.message-bubble {
+  max-width: 80%; /* Set a max-width to avoid horizontal scrolling */
+  min-width: 20%;
+  padding: 1vh;
+  border-radius: 1vh;
+  position: relative;
+}
+
+.my-message .message-bubble {
+  background-color: #cfe9ff; /* WhatsApp-like user message color */
+}
+
+.other-message .message-bubble {
+  background-color: #ffffff; /* WhatsApp-like user message color */
+}
+
+.message-user {
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-bottom: 0.5vh;
+}
+
+.message-content {
+  margin: 0;
+  color: #333;
+}
+
+.message-time {
+  font-size: 0.75rem;
+  color: #999;
+  margin-top: 0.5vh;
+  display: block; /* Ensures the time is on the next line */
+  text-align: right; /* Aligns the text to the right */
+}
+
+.bottom-form {
+  background-color: transparent;
+}
+@media (max-width: 480px) {
+  
+  .contain {
+    flex-direction: column; /* Stack guidelines and articles on smaller screens */
+    align-items: center; /* Center items horizontally */
+    margin-bottom: 10vh;
+    padding-left: 0;
+    padding-right: 0;
+    max-height: 80vh;
+  }
+
+  .articles-container {
+    width: 95vw; /* Full width on smaller screens */
+    padding: 2vh; /* Increase padding for better spacing */
+    min-height: 70vh; /* Increase height on smaller screens */
+    padding-bottom: 3vh;
+    margin-top: 10vh; /* Margin to start below navigation bar */
+  }
+}
+
+@media (max-width: 768px) {
+  .contain {
+    flex-direction: column; /* Stack guidelines and articles on smaller screens */
+    align-items: center; /* Center items horizontally */
+    margin-bottom: 10vh;
+  }
+
+  .articles-container {
+    width: 95vw; /* Full width on smaller screens */
+    padding: 2vh; /* Increase padding for better spacing */
+    min-height: 70vh; /* Increase height on smaller screens */
+    padding-bottom: 3vh;
+    margin-top: 8vh; /* Margin to start below navigation bar */
+  }
+}
+
+@media (max-width: 1280px) {
+  .contain {
+    gap: 1.5vw; /* Adjust gap for smaller screens */
+    padding-right: 0vw;
+    padding-left: 0vw;
+    margin-left: 0vw;
+    margin-right: 0vw;
+  }
+
+  .articles-container {
+    padding: 2.5vh;
+  }
+
+  .article-item {
+    padding: 0 0.75vw;
+  }
+}
+
+@media (max-width: 1024px) {
+  .main-content {
+    margin-top: 20vh;
+    margin-top: 5vh;
+  }
+
+  .contain {
+    flex-direction: column; /* Stack guidelines and articles on smaller screens */
+    align-items: center; /* Center items horizontally */
+  }
+
+  .articles-container {
+    width: 75%; /* Full width on smaller screens */
+    padding: 2vh; /* Increase padding for better spacing */
+    padding-bottom: 2vh;
+    margin-top: 25vh; /* Margin to start below navigation bar */
+    margin-bottom: 18vh;
+    min-height: 75vh;
+  }
+
+  .article-item {
+    padding: 0 0.5vw;
+  }
+}

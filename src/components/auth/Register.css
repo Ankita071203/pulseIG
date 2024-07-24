@@ -1,0 +1,204 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('C:/Users/kesha/my-article/background.jpg') center fixed no-repeat;
+    background-size: cover;
+    background-color: transparent;
+    backdrop-filter: blur(2vh);
+    width: 23vw; /* Adjust width using viewport units */
+  }
+  
+  form {
+    width: 100%;
+    max-width: 40vw; /* Adjust max-width using viewport units */
+    padding: 4vh;
+    border-radius: 2vh;
+    background-color: transparent;
+    backdrop-filter: blur(2vh);
+    border: 0.2vh solid rgba(245, 245, 245, 0.674);
+    box-shadow: 0 0 1vh rgba(0, 0, 0, 0.1);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  form h1 {
+    text-align: center;
+    margin-bottom: 2vh;
+    color: #f8f8f8;
+  }
+  
+  .inputbox {
+    position: relative;
+    margin-bottom: 2vh;
+    color: rgb(255, 255, 255);
+    width: 100%; /* Ensure input boxes take full width */
+  }
+  
+  .inputbox input {
+    width: 100%;
+    height: 6vh;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 0.2vh solid rgba(0, 0, 0, 0.1);
+    border-radius: 4vh;
+    font-size: 1.6vh;
+    color: #000000;
+    padding: 0 4.5vh 0 2vh;
+    background-color: white;
+  }
+  
+  .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4vh;
+    margin-bottom: 1.5vh;
+    color: white;
+    width: 100%; /* Ensure this section takes full width */
+  }
+  
+  .remember-forgot label input {
+    margin-right: 0.5vh;
+    color: white;
+  }
+  
+  .remember-forgot a {
+    color: #dedede;
+    text-decoration: none;
+  }
+  
+  .remember-forgot a:hover {
+    text-decoration: underline;
+  }
+  
+  .buton {
+    width: 100%;
+    height: 5vh;
+    background-color: #007bff;
+    border: none;
+    outline: none;
+    border-radius: 4vh;
+    font-size: 1.6vh;
+    color: #ffffff;
+    cursor: pointer;
+    margin-top: 2vh; /* Add margin-top to separate from previous elements */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2vh;
+    margin-left: 19%;
+  }
+  
+  .register-link {
+    text-align: center;
+    font-size: 2vh;
+    margin-top: 2vh;
+    color: white;
+  }
+  
+  .register-link p a {
+    color: #ffffff;
+    /* text-decoration: none; */
+    text-underline-offset: 0.2em;
+  }
+  
+  .register-link p a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 1280px) {
+    .wrapper {
+      width: 80vw;
+    }
+  
+    form {
+      max-width: 50vw;
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .wrapper {
+      width: 30vw;
+    }
+  
+    form {
+      max-width: 60vw;
+    }
+  
+    .inputbox input {
+      height: 8vh;
+      font-size: 3vh;
+    }
+  
+    .buton {
+      height: 5vh;
+      font-size: 1.8vh;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .wrapper {
+      width: 95vw;
+    }
+  
+    form {
+      max-width: 70vw;
+    }
+  
+    .inputbox input {
+      height: 5.5vh;
+      font-size: 2vh;
+    }
+  
+    .buton {
+      height: 5vh;
+      font-size: 2vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 1.5vh;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .wrapper {
+      width: 100vw;
+      padding: 2vh; /* Add some padding for better spacing */
+    }
+  
+    form {
+      max-width: 80vw;
+    }
+  
+    form h1 {
+      font-size: 5vh;
+    }
+  
+    .inputbox input {
+      height: 6vh;
+      font-size: 2.2vh;
+    }
+  
+    .buton {
+      height: 5vh;
+      font-size: 3vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 1.5vh;
+    }
+  
+    .remember-forgot {
+      font-size: 1.5vh;
+    }
+  
+    .register-link {
+      font-size: 2vh;
+    }
+  }
+  
