@@ -35,7 +35,7 @@ const Articles = () => {
     <div className="contain">
       <div className="articles-container">
         {articles.length === 0 ? (
-          <p>No messages found!</p>
+         null
         ) : (
           articles.map((article) => (
             <div
