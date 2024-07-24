@@ -3,8 +3,6 @@ import { collection, query, orderBy, onSnapshot } from 'firebase/firestore';
 import { db } from '../firebaseConfig'; // Adjust the path to firebaseConfig.js
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth } from "./../firebaseConfig";
-import './Articles.css'; // Import the CSS file
-
 const Articles = () => {
   const [user] = useAuthState(auth);
   const [articles, setArticles] = useState([]);
