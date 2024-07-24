@@ -29,6 +29,15 @@ export default function Navbar() {
           <Link className="Home nav-link" to="https://pulseigdtuw.github.io/pulse/index.html#">
             Home
           </Link>
+          <Link className="Home nav-link" to="https://pulseigdtuw.github.io/pulse/resumereview.html">
+            Resume Review
+          </Link>
+          <Link className="Home nav-link" to="https://pulse-ig-4s9r.vercel.app/">
+            Discussion
+          </Link>
+          <Link className="Home nav-link" to="https://pulseigdtuw.github.io/pulse/#aboutUs">
+            About
+          </Link>
           {user ? (
             <button
               className="logout"
@@ -42,6 +51,15 @@ export default function Navbar() {
       <div className={`sidebar_menu ${isSidebarOpen ? 'active' : ''}`}>
         <Link className="Home nav-link" to="https://pulseigdtuw.github.io/pulse/index.html#" onClick={handleToggleClick}>
           Home
+        </Link>
+        <Link className="Home nav-link" to="https://pulseigdtuw.github.io/pulse/resumereview.html" onClick={handleToggleClick}>
+          Resume Review
+        </Link>
+        <Link className="Home nav-link" to="https://pulse-ig-4s9r.vercel.app/" onClick={handleToggleClick}>
+          Discussion
+        </Link>
+        <Link className="Home nav-link" to="https://pulseigdtuw.github.io/pulse/#aboutUs" onClick={handleToggleClick}>
+          About
         </Link>
         {user ? (
           <button
