@@ -129,7 +129,7 @@ body {
     padding: 2vh; /* Increase padding for better spacing */
     min-height: 70vh; /* Increase height on smaller screens */
     padding-bottom: 3vh;
-    margin-top: 10vh; /* Margin to start below navigation bar */
+    margin-top: 30px; /* Margin to start below navigation bar */
   }
 }
 
