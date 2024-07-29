@@ -79,7 +79,9 @@ body {
   padding: 1vh;
   border-radius: 1vh;
   position: relative;
+  word-break: break-word; /* Break long words to prevent overflow */
 }
+
 
 .my-message .message-bubble {
   background-color: #cfe9ff; /* WhatsApp-like user message color */
