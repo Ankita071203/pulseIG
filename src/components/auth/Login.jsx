@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import { auth } from '../../firebaseConfig';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
+import { Link } from 'react-router-dom';
 import './Login.css';
 export default function Login() {
     let navigate=useNavigate();
@@ -19,7 +20,7 @@ export default function Login() {
 
     }
   return (
-    <div className='maincontainer' style={{maxWidth:350,minWidth:250}}>
+    <div className='maincontainer' >
       <h1>Login</h1>
       <div className='formgroup'>
             <label>Email ID</label>
@@ -39,8 +40,10 @@ export default function Login() {
             onChange={(e)=>{setPassword(e.target.value)}}
             />
         </div>
-<br/>
 <button className='buton' onClick={handleLognin}>Log in</button>
+<div className='register-link'>
+                    <p>Don't have an account? <a><Link to='/register'>Register</Link></a></p>
+                </div>
     </div>
   )
 }

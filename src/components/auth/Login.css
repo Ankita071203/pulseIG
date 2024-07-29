@@ -75,8 +75,8 @@ h1{
     background-color: #0056b3;
 }
 @media (max-width: 992px) {
-    .login-container {
-        width: 300px;
+    .maincontainer {
+        width: 350px;
         padding: 15px;
     }
     h1 {
@@ -90,12 +90,14 @@ h1{
 
 /* For screens with a max-width of 768px */
 @media (max-width: 768px) {
-    .login-container {
-        width: 80%;
+    .maincontainer {
+        width: 90%;
         padding: 10px;
+       margin-left: 15px;
+       margin-right: 5px;
     }
     h1 {
-        font-size: 1.2em;
+        font-size: 1em;
     }
     button[type="submit"] {
         font-size: 13px;
