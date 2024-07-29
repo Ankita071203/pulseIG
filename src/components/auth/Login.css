@@ -20,6 +20,7 @@ h1{
     justify-content: center;
     align-items: center;
     margin-top: 20vh;
+    max-width: 400px;
 }
 .formcontrol {
     width: 100%;
