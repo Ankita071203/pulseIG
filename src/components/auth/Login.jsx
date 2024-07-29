@@ -40,7 +40,7 @@ export default function Login() {
             onChange={(e)=>{setPassword(e.target.value)}}
             />
         </div>
-<button className='buton' onClick={handleLognin}>Log in</button>
+<button className='butonn' onClick={handleLognin}>Log in</button>
 <div className='register-link'>
                     <p>Don't have an account? <a><Link to='/register'>Register</Link></a></p>
                 </div>
