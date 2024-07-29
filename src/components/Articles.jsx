@@ -32,7 +32,7 @@ const Articles = () => {
   }, [articles]);
 
   return (
-    <div className="contain">
+    
       <div className="articles-container">
         {articles.length === 0 ? (
          null
@@ -60,7 +60,7 @@ const Articles = () => {
         )}
         <div ref={articlesEndRef} />
       </div>
-    </div>
+
   );
 };
 
