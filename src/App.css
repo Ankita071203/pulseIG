@@ -129,7 +129,7 @@ body {
     padding: 2vh; /* Increase padding for better spacing */
     min-height: 70vh; /* Increase height on smaller screens */
     padding-bottom: 3vh;
-    margin-top: 30px; /* Margin to start below navigation bar */
+    margin-top: 15px; /* Margin to start below navigation bar */
   }
 }
 
@@ -137,7 +137,7 @@ body {
   .contain {
     flex-direction: column; /* Stack guidelines and articles on smaller screens */
     align-items: center; /* Center items horizontally */
-    margin-bottom: 10vh;
+    margin-bottom: 15px;
   }
 
   .articles-container {
