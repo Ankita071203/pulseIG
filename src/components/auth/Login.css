@@ -22,7 +22,6 @@ h1 {
     align-items: center;
     width: 400px;
     max-width: 400px;
-    margin: 0; /* Ensure no additional margin */
     margin-top: 150px;
     color: white;
     margin-left: 15px;/*to over come the margin that has been created y app-container */

@@ -55,7 +55,7 @@ export default function Register() {
                     />
                 </div>
                 <button className='buton' type='button' onClick={handleSignup}>
-                     Sign Up
+                     Register
                 </button>
                 <div className='register-link'>
                     <p>Already have an account? <a><Link to='/signin'>Login</Link></a></p>

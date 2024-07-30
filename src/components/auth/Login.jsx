@@ -20,31 +20,35 @@ export default function Login() {
 
     }
   return (
-    <div className='maincontainer' >
-      <h1>Login</h1>
-      <div className='formgroup'>
-            <label>Email ID</label>
-            <input
-            type='email'
-            className='formcontrol'
-            placeholder='Enter your Email'
-            onChange={(e)=>{setEmail(e.target.value)}}
-            />
-        </div>
-        <div className='formgroup'>
-            <label>Password</label>
-            <input
-            type='password'
-            className='formcontrol'
-            placeholder='Enter your Password'
-            onChange={(e)=>{setPassword(e.target.value)}}
-            />
-        </div>
-<button className='butonn' onClick={handleLognin}>Log in</button>
-<div className='register-link'>
-                    <p>Don't have an account? <a><Link to='/register'>Register</Link></a></p>
+    <div className='wrapper'>
+            <form className='registerform' >
+                <h1>Log in</h1>
+                <div className='inputbox'>
+                <label>Email</label>
+                    <input
+                        type='email'
+                        placeholder='Email'
+                        className='formcontrol'
+                        onChange={(e) => setEmail(e.target.value)}
+                    />
                 </div>
-    </div>
+                <div className='inputbox'>
+                <label>Password</label>
+                    <input
+                        type='password'
+                        placeholder='Password'
+                        className='formcontrol'
+                        onChange={(e) => setPassword(e.target.value)}
+                    />
+                </div>
+                <button className='buton' type='button' onClick={handleLognin}>
+                     Log in
+                </button>
+                <div className='register-link'>
+                    <p>Dont't have an account? <a><Link to='/register'>Register</Link></a></p>
+                </div>
+            </form>
+        </div>
   )
 }
 

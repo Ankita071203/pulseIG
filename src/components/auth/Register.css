@@ -4,8 +4,14 @@ body, html {
   display: flex;
   justify-content: center;
   align-items: center;
+ 
 }
-
+body{
+  overflow-y: auto;
+}
+html{
+  margin-top: 30px;
+}
 .wrapper {
   display: flex;
   justify-content: center;
@@ -14,20 +20,22 @@ body, html {
   background: url('background.jpg') center fixed no-repeat;
   background-size: cover;
   background-color: transparent;
-  backdrop-filter: blur(2vh);
+  backdrop-filter: blur(20px);
   width: 400px; /* Adjust width using viewport units */
   max-width: 400px;
+  margin-top: 30px;
+ 
 }
 
 form {
   width: 100%;
   max-width: 40vw; /* Adjust max-width using viewport units */
-  padding: 4vh;
-  border-radius: 2vh;
+  padding: 25px;
+  border-radius: 20px;
   background-color: transparent;
-  backdrop-filter: blur(2vh);
-  border: 0.2vh solid rgba(245, 245, 245, 0.674);
-  box-shadow: 0 0 1vh rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(245, 245, 245, 0.674);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
   color: white;
   display: flex;
   flex-direction: column;
@@ -36,74 +44,55 @@ form {
 
 form h1 {
   text-align: center;
-  margin-bottom: 2vh;
+  margin-bottom: 8px;
   color: #f8f8f8;
 }
 
 .inputbox {
   position: relative;
-  margin-bottom: 2vh;
+  margin-bottom: 20px;
   color: rgb(255, 255, 255);
   width: 100%; /* Ensure input boxes take full width */
 }
-
+.inputbox label{
+  margin-bottom: 5px;
+}
 .inputbox input {
   width: 100%;
-  height: 6vh;
+  height: 40px;
   background: transparent;
   border: none;
   outline: none;
-  border: 0.2vh solid rgba(0, 0, 0, 0.1);
-  border-radius: 4vh;
-  font-size: 1.6vh;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+  font-size: 1em;
   color: #000000;
-  padding: 0 4.5vh 0 2vh;
+  padding: 0  10px 0 5px;
   background-color: white;
 }
-
-.remember-forgot {
-  display: flex;
-  justify-content: space-between;
-  font-size: 1.4vh;
-  margin-bottom: 1.5vh;
-  color: white;
-  width: 100%; /* Ensure this section takes full width */
-}
-
-.remember-forgot label input {
-  margin-right: 0.5vh;
-  color: white;
-}
-
-.remember-forgot a {
-  color: #dedede;
-  text-decoration: none;
-}
-
-.remember-forgot a:hover {
-  text-decoration: underline;
-}
-
 .buton {
   width: 50%;
-  height: 5vh;
+  height: 40px;
   background-color: #007bff;
   border: none;
   outline: none;
   border-radius: 4vh;
-  font-size: 1.6vh;
+  font-size: 1.2em;
   color: #ffffff;
   cursor: pointer;
-  margin-top: 2vh; /* Add margin-top to separate from previous elements */
+  margin-top: 10px; /* Add margin-top to separate from previous elements */
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.buton:hover{
+  background-color: #0056b3;
 
+}
 .register-link {
   text-align: center;
-  font-size: 2vh;
-  margin-top: 2vh;
+  font-size: 1em;
+  margin-top: 15px;
   color: white;
 }
 
@@ -137,13 +126,13 @@ form h1 {
   }
 
   .inputbox input {
-      height: 8vh;
-      font-size: 3vh;
+      height: 50px;
+      font-size: 1em;
   }
 
   .buton {
-      height: 5vh;
-      font-size: 1.8vh;
+      height: 50px;
+      font-size: 1em;
   }
 }
 
@@ -157,20 +146,20 @@ form h1 {
   }
 
   .inputbox input {
-      height: 5.5vh;
-      font-size: 2vh;
+      height: 40px;
+      font-size: 1em;
   }
 
   .buton {
-      height: 5vh;
-      font-size: 2vh;
+      height: 40px;
+      font-size: 1em;
   }
 }
 
 @media (max-width: 480px) {
   .wrapper {
       width: 100vw;
-      padding: 2vh; /* Add some padding for better spacing */
+      padding: 1px; /* Add some padding for better spacing */
   }
 
   form {
@@ -178,24 +167,21 @@ form h1 {
   }
 
   form h1 {
-      font-size: 5vh;
+      font-size: 1.8em;
   }
 
   .inputbox input {
-      height: 6vh;
-      font-size: 2.2vh;
+      height: 40px;
+      font-size: 0.9em;
   }
 
   .buton {
-      height: 5vh;
-      font-size: 3vh;
+      height: 40px;
+      font-size: 1em;
   }
 
-  .remember-forgot {
-      font-size: 1.5vh;
-  }
-
+ 
   .register-link {
-      font-size: 2vh;
+      font-size: 0.9em;
   }
 }
